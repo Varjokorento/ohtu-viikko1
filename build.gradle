@@ -25,6 +25,8 @@ jar {
     }
 }
 
+apply plugin: "jacoco"
+
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     compile 'com.google.guava:guava:20.0'
