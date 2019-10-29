@@ -126,7 +126,7 @@ public class VarastoTest {
         Varasto varasto2 = new Varasto(-2, -2);
         assertEquals(0, varasto2.getTilavuus(), vertailuTarkkuus);
 
-        assertEquals(1, varasto2.getSaldo(), vertailuTarkkuus);
+        assertEquals(0, varasto2.getSaldo(), vertailuTarkkuus);
     }
 
     @Test
