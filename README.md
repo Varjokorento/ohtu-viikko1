@@ -4,3 +4,5 @@
 
 [![codecov](https://codecov.io/gh/Varjokorento/ohtu-viikko1/branch/master/graph/badge.svg)](https://codecov.io/gh/Varjokorento/ohtu-viikko1)
 
+https://github.com/Varjokorento/ohtu-tehtavat
+
