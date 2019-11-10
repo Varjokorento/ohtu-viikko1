@@ -22,6 +22,10 @@ public class Varasto {
         } else { // virheellinen, nollataan
             this.tilavuus = 0.0;  // => käyttökelvoton varasto
         }
+        setAlkuSaldo(tilavuus, alkuSaldo);
+    }
+
+    private void setAlkuSaldo(double tilavuus, double alkuSaldo) {
         if (alkuSaldo < 0.0) {
             this.saldo = 0.0;
         } else if (alkuSaldo <= tilavuus) { // mahtuu
@@ -46,9 +50,8 @@ public class Varasto {
 
     // --- asettavat aksessorit eli setterit: ---
     public void lisaaVarastoon(double maara) {
-        if (maara < 0) 
-        { // virhetilanteessa voidaan tehdä 
-            return;       // tällainen pikapoistuminenkin!
+        if (maara < 0) {
+            return;
         }
         if (maara <= paljonkoMahtuu()) { // omia aksessoreita voi kutsua
             saldo = saldo + maara;          // ihan suoraan sellaisinaan

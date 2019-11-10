@@ -26,7 +26,7 @@ repositories {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'main.Main'
+        attributes 'Main-Class': 'ohtu.main.Main'
     }
 }
 
@@ -41,7 +41,7 @@ dependencies {
 }
 
 // Define the main class for the application
-mainClassName = 'main.Main'
+mainClassName = 'ohtu.main.Main'
 
 jacocoTestReport {
     reports {
