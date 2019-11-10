@@ -9,9 +9,14 @@
 		</module>
 		<module name="NestedIfDepth"/>
 		<module name="NestedForDepth"/>
-        <module name="LeftCurly"/>
+        <module name="LeftCurly">
+			<property name="option" value="eol"/>
+		</module>
         <module name="RightCurly"/>
 		<module name="Indentation"/>
+		<module name="CyclomaticComplexity">
+			<property name="max" value="3"/>
+		</module>
     </module>
 
 </module>
